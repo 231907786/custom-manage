@@ -1,0 +1,31 @@
+.nc-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nc-root > form {
+  padding: 20px 0 0 15px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.nc-root .grade::before {
+  content: '聘阶';
+  color: #0d69d5;
+  display: block;
+  box-sizing: border-box;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #0d69d5;
+  letter-spacing: 2px;
+  width: 256px;
+  margin: 5px 0;
+}
+
+.nc-root .buttonWrap {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+  margin-bottom: 50vh;
+}
