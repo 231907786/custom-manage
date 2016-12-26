@@ -18,7 +18,7 @@ export default class Login extends React.Component {
     e.preventDefault()
     av.User.logIn(username, password)
       .then(
-        success => this.props.router.push('new-customer'),
+        success => this.props.router.push('new-order-record'),
         fail => this.alert('error', '账号不存在或密码错误')
       )
   }
@@ -33,6 +33,10 @@ export default class Login extends React.Component {
   render() {
     return (
       <div className="login-root">
+        <div className="header">
+          <h1>宸宇</h1>
+          <h1>专卖店客户管理系统</h1>
+        </div>
         <form className="form" onSubmit={this.onSubmit}>
           <div className={`row ${this.state.focus === 'username' ? 'focus' : ''}`}>
             <label htmlFor="username">账号</label>

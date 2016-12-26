@@ -1,0 +1,79 @@
+.ol-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.select-query {
+  display: flex;
+  border-bottom: 1px solid rgba(114, 117, 120, 0.15);
+}
+
+.select-query .customer-select {
+  flex: 1;
+  border: 0;
+}
+
+.select-query .query {
+  width: 20vw;
+  background-color: #ee2650;
+  border: 0;
+  color: #fff;
+}
+
+
+.list {
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.list > .record:nth-child(1) {
+  border: 0;
+}
+
+.record {
+  height: 70px;
+  border-top: 1px solid rgba(114, 117, 120, 0.3);
+  display: flex;
+  /*background: #fafafa;*/
+}
+
+.record .type-quantity {
+  flex: 30;
+  display: flex;
+  align-items: center;
+}
+
+.type-quantity > span {
+  padding: 10px;
+  margin-left: 5px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #f79e17;
+}
+
+.record .sum {
+  flex: 35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sum > div {
+  display: flex;
+  flex-direction: column;
+  font-weight: bolder;
+}
+
+.sum > div > span:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.record .date {
+  flex: 35;
+  color: #576a6e;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 14px;
+}

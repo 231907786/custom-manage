@@ -4,9 +4,8 @@ import App from './App';
 import './index.css';
 import 'normalize.css';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import injectTapEventPlugin from 'react-tap-event-plugin'
 
-
-const injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin(
   // {
   //   shouldRejectClick: function (lastTouchEventTimestamp, clickEventTimestamp) {

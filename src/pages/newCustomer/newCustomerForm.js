@@ -7,7 +7,6 @@ import {
   RadioButtonGroup,
 } from 'redux-form-material-ui'
 import HeaderLine from '../../components/HeaderLine'
-import av from '../../db'
 
 class NewCustomerForm extends Component {
 
@@ -19,7 +18,7 @@ class NewCustomerForm extends Component {
   }
 
   render() {
-    const {handleSubmit, pristine, reset, submitting} = this.props
+    const {handleSubmit, pristine, submitting} = this.props
     return (
       <form onSubmit={handleSubmit}>
         <HeaderLine name="基本信息">
@@ -36,6 +35,7 @@ class NewCustomerForm extends Component {
           <Field
             name="id_number"
             component={TextField}
+            type="tel"
             hintText="身份证号码"
             floatingLabelText="身份证号码"
             validate={this.required()}
@@ -68,6 +68,7 @@ class NewCustomerForm extends Component {
           <Field
             name="mobile_number"
             component={TextField}
+            type="tel"
             hintText="手机号码"
             floatingLabelText="手机号码"
             validate={this.required()}
@@ -89,6 +90,7 @@ class NewCustomerForm extends Component {
           <Field
             name="sn"
             component={TextField}
+            type="tel"
             hintText="会员编号"
             floatingLabelText="会员编号"
             validate={this.required()}
@@ -109,6 +111,7 @@ class NewCustomerForm extends Component {
           <Field
             name="account_balance"
             component={TextField}
+            type="tel"
             hintText="报单金额"
             floatingLabelText="报单金额"
             validate={this.required()}

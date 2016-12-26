@@ -1,0 +1,112 @@
+.nor-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.customer-select {
+  background: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(114, 117, 120, 0.15);
+}
+
+.select-product {
+  background: #fff;
+  padding: 10px 15px;
+  border-top: 1px solid rgba(114, 117, 120, 0.15);
+  border-bottom: 1px solid rgba(114, 117, 120, 0.15);
+}
+
+.discount-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.product-list {
+  margin: 8px 15px;
+}
+
+.list {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 5px;
+  background: #fff;
+  padding: 10px 0;
+  border-top: 1px solid rgba(114, 117, 120, 0.15);
+  border-bottom: 1px solid rgba(114, 117, 120, 0.15)
+}
+
+.list .product {
+  min-height: 48px;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(114, 117, 120, 0.15);
+  border-bottom: 1px solid rgba(114, 117, 120, 0.15);
+}
+
+.list .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.quantity .add,
+.quantity .remove
+{
+  padding: 0 !important;
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.quantity > span {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(34, 189, 217, 0.76);
+}
+
+.product .desc {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.desc .sn {
+  min-width: 50px;
+}
+.desc .name {
+  margin-left: 3vw;
+}
+
+.total {
+  display: flex;
+  height: 50px;
+  background: #fff;
+}
+
+.total .value {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.total .value span {
+  font-weight: bolder;
+}
+
+.total .value .price {
+  margin-bottom: 5px;
+}
+
+.total .submit {
+  width: 40vw;
+  height: 50px !important;
+}

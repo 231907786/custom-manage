@@ -8,6 +8,8 @@ import rootReducer from './reducer'
 
 import Login from './pages/login'
 import NewCustomer from './pages/newCustomer'
+import NewOrderRecord from './pages/newOrderRecord'
+import OrderList from './pages/orderList'
 
 const logger = createLogger({
   collapsed: true,
@@ -26,7 +28,7 @@ const logger = createLogger({
 })
 
 // const store = createStore(rootReducer, applyMiddleware(
-//     logger,
+    // logger,
 // ))
 const store = createStore(rootReducer)
 
@@ -39,6 +41,8 @@ export default class App extends Component {
           <Route path="/" component={({children}) => <div className="router-root">{children}</div>}>
             <IndexRoute component={Login}></IndexRoute>
             <Route path="new-customer" component={NewCustomer}></Route>
+            <Route path="new-order-record" component={NewOrderRecord}></Route>
+            <Route path="order-list" component={OrderList}></Route>
           </Route>
         </Router>
       </Provider>
